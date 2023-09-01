@@ -1,0 +1,82 @@
+{
+  "State": {
+    "SelectedPreset": "Off",
+    "Presets": {
+      "One": {
+        "Effect": "Static",
+        "Speed": "Slowest",
+        "Brightness": "Low",
+        "Zone1": {
+          "R": 142,
+          "G": 255,
+          "B": 0
+        },
+        "Zone2": {
+          "R": 0,
+          "G": 212,
+          "B": 255
+        },
+        "Zone3": {
+          "R": 101,
+          "G": 0,
+          "B": 255
+        },
+        "Zone4": {
+          "R": 186,
+          "G": 0,
+          "B": 255
+        }
+      },
+      "Two": {
+        "Effect": "Breath",
+        "Speed": "Slowest",
+        "Brightness": "Low",
+        "Zone1": {
+          "R": 255,
+          "G": 255,
+          "B": 255
+        },
+        "Zone2": {
+          "R": 255,
+          "G": 255,
+          "B": 255
+        },
+        "Zone3": {
+          "R": 255,
+          "G": 255,
+          "B": 255
+        },
+        "Zone4": {
+          "R": 255,
+          "G": 255,
+          "B": 255
+        }
+      },
+      "Three": {
+        "Effect": "Smooth",
+        "Speed": "Slowest",
+        "Brightness": "Low",
+        "Zone1": {
+          "R": 255,
+          "G": 255,
+          "B": 255
+        },
+        "Zone2": {
+          "R": 255,
+          "G": 255,
+          "B": 255
+        },
+        "Zone3": {
+          "R": 255,
+          "G": 255,
+          "B": 255
+        },
+        "Zone4": {
+          "R": 255,
+          "G": 255,
+          "B": 255
+        }
+      }
+    }
+  }
+}

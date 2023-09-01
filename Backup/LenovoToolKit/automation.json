@@ -1,0 +1,149 @@
+{
+  "IsEnabled": true,
+  "Pipelines": [
+    {
+      "Id": "2aeedec3-fb71-4082-becd-1349e4bdc378",
+      "IconName": null,
+      "Name": null,
+      "Trigger": {
+        "$type": "LenovoLegionToolkit.Lib.Automation.Pipeline.Triggers.AndAutomationPipelineTrigger, LenovoLegionToolkit.Lib.Automation",
+        "Triggers": [
+          {
+            "$type": "LenovoLegionToolkit.Lib.Automation.Pipeline.Triggers.ACAdapterDisconnectedAutomationPipelineTrigger, LenovoLegionToolkit.Lib.Automation"
+          },
+          {
+            "$type": "LenovoLegionToolkit.Lib.Automation.Pipeline.Triggers.ProcessesAreRunningAutomationPipelineTrigger, LenovoLegionToolkit.Lib.Automation",
+            "Processes": [
+              {
+                "Name": "RiotClientServices",
+                "ExecutablePath": "D:\\Games\\Valorant\\Riot Games\\Riot Client\\RiotClientServices.exe"
+              },
+              {
+                "Name": "GenshinImpact",
+                "ExecutablePath": "D:\\Games\\Genshin Impact game\\GenshinImpact.exe"
+              }
+            ]
+          }
+        ]
+      },
+      "Steps": [
+        {
+          "$type": "LenovoLegionToolkit.Lib.Automation.Steps.PowerModeAutomationStep, LenovoLegionToolkit.Lib.Automation",
+          "State": "Balance"
+        },
+        {
+          "$type": "LenovoLegionToolkit.Lib.Automation.Steps.RefreshRateAutomationStep, LenovoLegionToolkit.Lib.Automation",
+          "State": {
+            "Frequency": 165
+          }
+        }
+      ],
+      "IsExclusive": true
+    },
+    {
+      "Id": "e9ed0431-1ca0-41ac-be19-812cbd926191",
+      "IconName": null,
+      "Name": null,
+      "Trigger": {
+        "$type": "LenovoLegionToolkit.Lib.Automation.Pipeline.Triggers.ProcessesStopRunningAutomationPipelineTrigger, LenovoLegionToolkit.Lib.Automation",
+        "Processes": [
+          {
+            "Name": "RiotClientServices",
+            "ExecutablePath": "D:\\Games\\Valorant\\Riot Games\\Riot Client\\RiotClientServices.exe"
+          },
+          {
+            "Name": "GenshinImpact",
+            "ExecutablePath": "D:\\Games\\Genshin Impact game\\GenshinImpact.exe"
+          }
+        ]
+      },
+      "Steps": [
+        {
+          "$type": "LenovoLegionToolkit.Lib.Automation.Steps.PowerModeAutomationStep, LenovoLegionToolkit.Lib.Automation",
+          "State": "Balance"
+        }
+      ],
+      "IsExclusive": true
+    },
+    {
+      "Id": "18e328f8-fc92-4d4f-a7da-930d10240bce",
+      "IconName": null,
+      "Name": null,
+      "Trigger": {
+        "$type": "LenovoLegionToolkit.Lib.Automation.Pipeline.Triggers.ProcessesAreRunningAutomationPipelineTrigger, LenovoLegionToolkit.Lib.Automation",
+        "Processes": [
+          {
+            "Name": "RiotClientServices",
+            "ExecutablePath": "D:\\Games\\Valorant\\Riot Games\\Riot Client\\RiotClientServices.exe"
+          },
+          {
+            "Name": "GenshinImpact",
+            "ExecutablePath": "D:\\Games\\Genshin Impact game\\GenshinImpact.exe"
+          }
+        ]
+      },
+      "Steps": [
+        {
+          "$type": "LenovoLegionToolkit.Lib.Automation.Steps.PowerModeAutomationStep, LenovoLegionToolkit.Lib.Automation",
+          "State": "Performance"
+        }
+      ],
+      "IsExclusive": true
+    },
+    {
+      "Id": "42853cf7-789a-4f9f-8ab4-82190c71b47a",
+      "IconName": null,
+      "Name": null,
+      "Trigger": {
+        "$type": "LenovoLegionToolkit.Lib.Automation.Pipeline.Triggers.ACAdapterConnectedAutomationPipelineTrigger, LenovoLegionToolkit.Lib.Automation"
+      },
+      "Steps": [
+        {
+          "$type": "LenovoLegionToolkit.Lib.Automation.Steps.PowerModeAutomationStep, LenovoLegionToolkit.Lib.Automation",
+          "State": "Balance"
+        },
+        {
+          "$type": "LenovoLegionToolkit.Lib.Automation.Steps.RefreshRateAutomationStep, LenovoLegionToolkit.Lib.Automation",
+          "State": {
+            "Frequency": 165
+          }
+        }
+      ],
+      "IsExclusive": true
+    },
+    {
+      "Id": "a2299540-3f87-402a-b45d-59a647f5be84",
+      "IconName": null,
+      "Name": null,
+      "Trigger": {
+        "$type": "LenovoLegionToolkit.Lib.Automation.Pipeline.Triggers.ACAdapterDisconnectedAutomationPipelineTrigger, LenovoLegionToolkit.Lib.Automation"
+      },
+      "Steps": [
+        {
+          "$type": "LenovoLegionToolkit.Lib.Automation.Steps.PowerModeAutomationStep, LenovoLegionToolkit.Lib.Automation",
+          "State": "Quiet"
+        },
+        {
+          "$type": "LenovoLegionToolkit.Lib.Automation.Steps.RefreshRateAutomationStep, LenovoLegionToolkit.Lib.Automation",
+          "State": {
+            "Frequency": 60
+          }
+        }
+      ],
+      "IsExclusive": true
+    },
+    {
+      "Id": "fa4f1100-1a4b-4519-9836-e275b2955fab",
+      "IconName": null,
+      "Name": "Deactivate GPU",
+      "Trigger": null,
+      "Steps": [
+        {
+          "$type": "LenovoLegionToolkit.Lib.Automation.Steps.DeactivateGPUAutomationStep, LenovoLegionToolkit.Lib.Automation",
+          "State": "KillApps"
+        }
+      ],
+      "IsExclusive": false
+    }
+  ]
+}

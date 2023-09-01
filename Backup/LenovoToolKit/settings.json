@@ -1,0 +1,44 @@
+{
+  "Theme": "System",
+  "AccentColor": null,
+  "AccentColorSource": "System",
+  "PowerPlans": {
+    "Quiet": "16edbccd-dee9-4ec4-ace5-2f0b5f2a8975",
+    "Balance": "85d583c5-cf2e-4197-80fd-3789a227a72c",
+    "Performance": "52521609-efc9-4268-b9ba-67dea73f18b2"
+  },
+  "MinimizeOnClose": true,
+  "WindowSize": {
+    "Width": 1150.0,
+    "Height": 750.0
+  },
+  "ActivatePowerProfilesWithVantageEnabled": false,
+  "DontShowNotifications": false,
+  "NotificationPosition": "BottomRight",
+  "NotificationDuration": "Normal",
+  "Notifications": {
+    "UpdateAvailable": true,
+    "CapsNumLock": false,
+    "FnLock": false,
+    "TouchpadLock": true,
+    "KeyboardBacklight": true,
+    "CameraLock": true,
+    "Microphone": true,
+    "PowerMode": false,
+    "RefreshRate": true,
+    "ACAdapter": false,
+    "SmartKey": false
+  },
+  "TemperatureUnit": "C",
+  "ExcludedRefreshRates": [],
+  "WarrantyInfo": {
+    "Start": "2022-02-15T00:00:00",
+    "End": "2025-02-14T00:00:00",
+    "Link": "https://pcsupport.lenovo.com/products/LAPTOPS-AND-NETBOOKS/LEGION-SERIES/LEGION-5-15ACH6H/82JU/82JU015PTA/PF3JZMNF"
+  },
+  "SmartKeySinglePressActionId": null,
+  "SmartKeyDoublePressActionId": null,
+  "SmartKeySinglePressActionList": [],
+  "SmartKeyDoublePressActionList": [],
+  "SynchronizeBrightnessToAllPowerPlans": false
+}
